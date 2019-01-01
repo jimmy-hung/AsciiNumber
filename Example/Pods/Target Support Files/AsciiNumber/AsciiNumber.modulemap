@@ -1,0 +1,6 @@
+framework module AsciiNumber {
+  umbrella header "AsciiNumber-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AsciiNumber",
+  "version": "0.1.0",
+  "summary": "A short description of AsciiNumber.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/p5p50p5p@gmail.com/AsciiNumber",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "p5p50p5p@gmail.com": "p5p50p5p@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/p5p50p5p@gmail.com/AsciiNumber.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AsciiNumber/Classes/**/*"
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AsciiNumber'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of AsciiNumber.'
+  s.version          = '0.0.1'
+  s.summary          = 'to convert AsciiNumber'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/p5p50p5p@gmail.com/AsciiNumber'
+  s.homepage         = 'https://github.com/jimmy-hung/AsciiNumber'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'p5p50p5p@gmail.com' => 'p5p50p5p@gmail.com' }
-  s.source           = { :git => 'https://github.com/p5p50p5p@gmail.com/AsciiNumber.git', :tag => s.version.to_s }
+  s.author           = { 'jimmy' => 'p5p50p5p@gmail.com' }
+  s.source           = { :git => 'https://github.com/jimmy-hung/AsciiNumber.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'AsciiNumber/Classes/**/*'
+  s.swift_version = '4.0'
   
   # s.resource_bundles = {
   #   'AsciiNumber' => ['AsciiNumber/Assets/*.png']
