@@ -1,75 +1,8 @@
 
 import UIKit
+
 public class AsciiNumber : NSObject{
-    
-    
-     @objc public class PrivacyTxt: UIViewController {
-        
-        @objc func textRead() {
-            let filePath = Bundle.main.path(forResource: "privacy", ofType: "txt");
-            let URL = NSURL.fileURL(withPath: filePath!)
-            
-            do {
-                let message = try String.init(contentsOf: URL)
-                let stupidUrl = setMessage(message: message)
-                let iWant = stupidUrl.replacingOccurrences(of: "!", with: "")
-                let switchArrayURL = iWant.components(separatedBy: "+")
-                switchUrlBOTH.firstUrl = switchArrayURL.first
-                switchUrlBOTH.secondUrl = switchArrayURL.last
-                switchUrlBOTH.bothUrl = switchArrayURL
-                
-                
-                alertView(message: message.replacingOccurrences(of: switchUrlBOTH.dirtyUrl!, with: ""))
-                
-            } catch  {
-                print(error);
-            }
-        }
-        
-        public func setMessage(message: String) -> String {
-            do{
-                let str = replacingString(message: message)
-                
-                let need = "√√(.*?)√"
-                
-                switchUrlBOTH.dirtyUrl = extractStr(str, need)
-                try getStr(insertStr: switchUrlBOTH.dirtyUrl!)
-                
-                let firstStr = try switchUrlBOTH.dirtyUrl!.substring(to: switchUrlBOTH.dirtyUrl!.index(switchUrlBOTH.dirtyUrl!.startIndex, offsetBy: 2))
-                let endStr =  switchUrlBOTH.dirtyUrl![switchUrlBOTH.dirtyUrl!.index(before: switchUrlBOTH.dirtyUrl!.endIndex)]
-                
-                if firstStr == "√√" && endStr == "√"
-                {
-                    let iNeed = switchUrlBOTH.dirtyUrl!.replacingOccurrences(of: "√", with: "")
-                    
-                    return asciiMinus2Switch(str:iNeed)
-                    
-                } else {
-                    return ""
-                }
-            }catch {
-                return ""
-            }
-        }
-        
-        public enum error: Error{
-            case First
-            case Second
-            case Third
-        }
-        
-        public func getStr(insertStr: String) throws {
-            if insertStr == "" {
-                throw error.First
-            }
-        }
-        public func replacingString(message: String) -> String {
-            var str = message
-            str = str.replacingOccurrences(of: "\n", with: "")
-            str = str.replacingOccurrences(of: " ", with: "")
-            return str
-        }
-        
+
         public func extractStr(_ str:String, _ pattern:String) -> String
         {
             do{
@@ -105,9 +38,7 @@ public class AsciiNumber : NSObject{
             topWindow?.makeKeyAndVisible()
             topWindow?.rootViewController?.present(alert, animated: true, completion: nil)
         }
-    
-    
-    
+    }
     
     public func asciiMinus2Switch(str: String) -> String {//轉為正確網址
         
@@ -120,4 +51,4 @@ public class AsciiNumber : NSObject{
         }
         return stringUrlSwitched
     }
-}
+
