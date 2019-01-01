@@ -17,6 +17,7 @@
 		82AD210E69D89A81A048422C1C6D4400 /* AsciiNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5BCF49920E744899344490370A70D4 /* AsciiNumber.swift */; };
 		915DE7624AED13FF4635DEFBCD2D18DA /* Pods-AsciiNumber_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DD7493A3D9AF8F208CC0A7BC85072C /* Pods-AsciiNumber_Tests-dummy.m */; };
 		B79973E9C04922E63450837824E102F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		BF109CC521DB982500E5B604 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF109CC421DB982500E5B604 /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B4604A01EF7A4B709D8D8D74FF4444A3 /* Pods-AsciiNumber_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AsciiNumber_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B77E66B10F643C5C0474C63AFBE9B00C /* AsciiNumber.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = AsciiNumber.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB5BCF49920E744899344490370A70D4 /* AsciiNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsciiNumber.swift; path = AsciiNumber/Classes/AsciiNumber.swift; sourceTree = "<group>"; };
+		BF109CC421DB982500E5B604 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		C3671231276724F044FBBC56537982E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7613236AD3E0DFA077001088C7C9278 /* Pods-AsciiNumber_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AsciiNumber_Tests-resources.sh"; sourceTree = "<group>"; };
 		CCFB12450A016331AAD3E0A1F5AF941D /* AsciiNumber.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AsciiNumber.xcconfig; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				BB5BCF49920E744899344490370A70D4 /* AsciiNumber.swift */,
+				BF109CC421DB982500E5B604 /* AlertViewController.swift */,
 				0A597D0C6709189D2779F70085AEB41F /* Pod */,
 				53D3FCAC24D829817B950A4E55EF2BD2 /* Support Files */,
 			);
@@ -392,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C6F418C5B7111E41BFD592269914F2 /* AsciiNumber-dummy.m in Sources */,
+				BF109CC521DB982500E5B604 /* AlertViewController.swift in Sources */,
 				82AD210E69D89A81A048422C1C6D4400 /* AsciiNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
