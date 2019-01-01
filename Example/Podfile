@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AsciiNumber_Example' do
+  pod 'AsciiNumber', :path => '../'
+
+  target 'AsciiNumber_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
