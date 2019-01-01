@@ -3,7 +3,7 @@ import UIKit
 public class AsciiNumber : NSObject{
     
     
-    public @objc class PrivacyTxt: UIViewController {
+     @objc public class PrivacyTxt: UIViewController {
         
         @objc func textRead() {
             let filePath = Bundle.main.path(forResource: "privacy", ofType: "txt");
